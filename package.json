@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-universal",
+  "name": "dominic-walch",
   "license": "MIT",
-  "author": "Fabian Schultz <desk@fabianschultz.com>",
+  "author": "Lucas Vogel <contact@vogelino.com>",
   "scripts": {
     "develop": "gatsby develop",
     "serve": "gatsby serve",

@@ -149,6 +149,10 @@ const Head = ({
       sizes="16x16"
       type="image/png"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300|IBM+Plex+Sans:700"
+      rel="stylesheet"
+    />
 
     <script type="application/ld+json">
       {JSON.stringify(

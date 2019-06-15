@@ -1,19 +1,22 @@
 {
-  "title": "Home",
-  "content": "intro.md",
-  "gallery": [{
-    "title": "React Context",
-    "copy": "For global styles.",
-    "image": "../images/gallery/react-context.jpg"
+  "title": "Dominic Walch",
+  "subtitle": "Digital Strategy Consulting",
+  "intro": {
+    "title": "Beratungsleistungen",
+    "content": "intro.md"
   },
-  {
-    "title": "Page Transitions",
-    "copy": "Component-based for easy usage.",
-    "image": "../images/gallery/page-transitions.jpg"
-  },
-  {
-    "title": "Intersection Observer",
-    "copy": "Including a polyfill for Safari.",
-    "image": "../images/gallery/intersection-observer.jpg"
-  }]
+  "sections": [
+    {
+      "title": "Beratung zur Geschäftsentwicklung",
+      "content": "section1.md"
+    },
+    {
+      "title": "Beratung im Bereich Unternehmensfinanzierung",
+      "content": "section2.md"
+    },
+    {
+      "title": "Beratung zur Marketingstrategie",
+      "content": "section3.md"
+    }
+  ]
 }
