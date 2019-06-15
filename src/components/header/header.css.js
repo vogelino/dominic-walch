@@ -15,5 +15,6 @@ export const Subtitle = styled(Title)`
   width: 100px;
   font-size: 1rem;
   line-height: 1.45rem;
+  font-weight: 300;
   padding-top: 16px;
 `;

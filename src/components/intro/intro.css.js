@@ -11,7 +11,6 @@ export const Container = styled.section`
 
 export const Catchphrase = styled(Title)`
   font-weight: 500;
-  margin-bottom: 0.75rem;
 `;
 
 export const LogicalSequence = styled(Title)`

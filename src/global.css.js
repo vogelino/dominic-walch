@@ -51,6 +51,13 @@ export default createGlobalStyle`
     font-weight: 300;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+
   ol, ul {
     list-style: none;
   }
@@ -93,5 +100,7 @@ export default createGlobalStyle`
 
   p {
     margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 `;

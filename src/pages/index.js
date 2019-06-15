@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
-import Title from 'components/title';
 import Header from 'components/Header';
 import { graphql } from 'gatsby';
 import Intro from 'components/intro';
+import TextSlider from 'components/textslider';
 
 const Index = ({
   data: {
@@ -14,16 +14,14 @@ const Index = ({
   <Layout>
     <Header subtitle={subtitle} />
     <Intro {...intro} />
-    {sections.map(({ title, content }) => (
-      <div key={title}>
-        <Title as="h3">{title}</Title>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: content.childMarkdownRemark.html,
-          }}
-        />
-      </div>
-    ))}
+    <TextSlider
+      slides={sections.map(({ title, content }) => ({
+        id: title,
+        title,
+        text: content.childMarkdownRemark.html,
+      }))}
+      emojis={['😎', '🤑', '💅']}
+    />
   </Layout>
 );
 

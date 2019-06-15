@@ -9,7 +9,7 @@ import {
 
 const Intro = ({ catchphrase, logicalSequence, buttonText }) => (
   <Container>
-    <Catchphrase>{catchphrase}</Catchphrase>
+    <Catchphrase as="h2">{catchphrase}</Catchphrase>
     <LogicalSequence>{logicalSequence}</LogicalSequence>
     <CallToActionButton>{buttonText}</CallToActionButton>
   </Container>
