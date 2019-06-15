@@ -4,6 +4,7 @@ import Layout from 'components/layout';
 import Title from 'components/title';
 import Header from 'components/Header';
 import { graphql } from 'gatsby';
+import Intro from 'components/intro';
 
 const Index = ({
   data: {
@@ -12,11 +13,7 @@ const Index = ({
 }) => (
   <Layout>
     <Header subtitle={subtitle} />
-    <div>
-      <Title as="h2">{intro.catchphrase}</Title>
-      <p>{intro.logicalSequence}</p>
-      <button>{intro.buttonText}</button>
-    </div>
+    <Intro {...intro} />
     {sections.map(({ title, content }) => (
       <div key={title}>
         <Title as="h3">{title}</Title>
