@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
-  max-width: 500px;
   height: 240px;
   position: relative;
 `;

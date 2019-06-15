@@ -19,5 +19,11 @@
       "title": "Marketingstrategie",
       "content": "section3.md"
     }
-  ]
+  ],
+  "about": {
+    "portrait": "../images/portrait-dominic-walch-digital-strategy-consulting.png",
+    "portraitTitle": "Portrait photography of Dominic Walch, the digital strategy consultant you can count on",
+    "title": "Über mich",
+    "content": "about.md"
+  }
 }

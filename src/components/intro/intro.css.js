@@ -3,7 +3,6 @@ import Title from 'components/title';
 import { accent } from 'constants/theme';
 
 export const Container = styled.section`
-  max-width: 500px;
   font-size: 2rem;
   line-height: 2.25rem;
   margin-bottom: 10vmin;

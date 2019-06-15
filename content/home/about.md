@@ -1,0 +1,1 @@
+Projekte können eine Herausforderung sein; ich bin hier, um Ihnen die Arbeit zu erleichtern. Ich bin ein ehrlicher und engagierter Profi, dessen oberste Priorität immer die Interessen meiner Kunden sind: Leistungsfähigkeit, Anpassungsfähigkeit und Skalierbarkeit. Seit 2000 betreue ich meine treuen Kunden im Raum Berlin.
