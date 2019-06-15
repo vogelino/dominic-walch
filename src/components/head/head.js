@@ -18,7 +18,7 @@ const Head = ({
   canonical = siteUrl + (location.pathname || ''),
 }) => (
   <Helmet>
-    <html lang="en" />
+    <html lang="de" />
 
     <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
     <meta

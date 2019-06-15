@@ -1,1 +1,7 @@
-Meine Dienstleistungen sind auf die spezifischen Bedürfnisse jedes Kunden zugeschnitten. Ich arbeite während des gesamten Prozesses eng mit ihnen zusammen und garantiere messbare Ergebnisse. Kontaktieren Sie mich und finden Sie heraus, wie ich Ihnen ab sofort helfen kann.
+- Working with awesome people
+- Having fun
+- Being challenged 
+- Finding solutions
+- Cutting-edge technology
+- Pushing boundaries
+- Being creative

@@ -1,24 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MEDIA from 'helpers/mediaTemplates';
 import Layout from 'components/layout';
-import Header from 'components/Header';
+import Header from 'components/header';
 import { graphql } from 'gatsby';
 import Intro from 'components/intro';
 import TextSlider from 'components/textslider';
 import About from 'components/about';
+import Footer from 'components/footer';
 import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${MEDIA.TABLET`
+    flex-wrap: wrap;
+  `};
 `;
 
 const LeftSection = styled.div`
-  flex: 0 1 500px;
+  flex: 0 0 500px;
+
+  ${MEDIA.TABLET`
+    flex: 1 1 100%;
+  `};
 `;
 
-const RightSection = styled.div`
-  flex: 0 1 calc(500px + 10vmin);
+const RightSection = styled(LeftSection)`
+  flex: 0 1 calc(500px + 8vmin);
+  padding-left: 8vmin;
+
+  ${MEDIA.TABLET`
+    padding-left: 0;
+    padding-top: 8vmin;
+  `};
 `;
 
 const Index = ({
@@ -37,13 +53,14 @@ const Index = ({
             title,
             text: content.childMarkdownRemark.html,
           }))}
-          emojis={['😎', '🤑', '💅']}
+          emojis={sections.map(({ emoji }) => emoji)}
         />
       </LeftSection>
       <RightSection>
         <About {...about} text={about.content.childMarkdownRemark.html} />
       </RightSection>
     </Container>
+    <Footer />
   </Layout>
 );
 
@@ -65,6 +82,7 @@ export const query = graphql`
       }
       sections {
         title
+        emoji
         content {
           childMarkdownRemark {
             html

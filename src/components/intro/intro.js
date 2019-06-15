@@ -9,9 +9,11 @@ import {
 
 const Intro = ({ catchphrase, logicalSequence, buttonText }) => (
   <Container>
-    <Catchphrase as="h2">{catchphrase}</Catchphrase>
+    <Catchphrase as="h2" dangerouslySetInnerHTML={{ __html: catchphrase }} />
     <LogicalSequence>{logicalSequence}</LogicalSequence>
-    <CallToActionButton>{buttonText}</CallToActionButton>
+    <CallToActionButton href="mailto:hello@betteraskwalch.com">
+      {buttonText}
+    </CallToActionButton>
   </Container>
 );
 

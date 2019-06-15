@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { black } from 'constants/theme';
+import MEDIA from 'helpers/mediaTemplates';
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -32,6 +33,14 @@ export default createGlobalStyle`
 
   html {
     font-size: 16px;
+
+    ${MEDIA.TABLET`
+      font-size: 15px;
+    `};
+
+    ${MEDIA.PHONE`
+      font-size: 13px;
+    `};
   }
 
   body {
@@ -49,6 +58,8 @@ export default createGlobalStyle`
     font-variant-numeric: proportional-nums;
     padding: 8vmin;
     font-weight: 300;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
   h1, h2, h3, h4, h5, h6 {

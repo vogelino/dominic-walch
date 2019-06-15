@@ -1,1 +1,6 @@
-Meine Kunden sind meine oberste Priorität und meine Leistungen zeugen davon, wie sehr ich mich für ihren Erfolg einsetze. Buchen Sie noch heute ein Einführungsgespräch und erfahren Sie mehr darüber, wie ich Ihr Unternehmen zum Erfolg führen kann.
+- Get you comfy outside your comfort zone 
+- Break up your routine and pampering you
+- Protect your core values 
+- Strengthen your roots
+- Nurture your business
+- Teasing and pleasing

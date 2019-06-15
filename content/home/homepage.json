@@ -2,22 +2,35 @@
   "title": "Dominic Walch",
   "subtitle": "Digital Strategy Consulting",
   "intro": {
-    "catchphrase": "Sie haben ein Ziel, das Sie erreichen wollen, wissen aber nicht, wo Sie anfangen sollen?",
-    "logicalSequence": "Lassen Sie sich von mir beraten.",
+    "catchphrase": "Comfy outside <br/>your comfort zone.",
+    "logicalSequence": "Ready when you are.",
     "buttonText": "Better ask Walch!"
   },
   "sections": [
     {
-      "title": "Geschäftsentwicklung",
+      "emoji": "👾",
+      "title": "How we roll",
       "content": "section1.md"
     },
     {
-      "title": "Unternehmensfinanzierung",
+      "emoji": "🤩",
+      "title": "What to expect",
       "content": "section2.md"
     },
     {
-      "title": "Marketingstrategie",
+      "emoji": "❤️",
+      "title": "What we love",
       "content": "section3.md"
+    },
+    {
+      "emoji": "🧞‍",
+      "title": "Who we are",
+      "content": "section4.md"
+    },
+    {
+      "emoji": "💌",
+      "title": "Contact",
+      "content": "section5.md"
     }
   ],
   "about": {
@@ -25,5 +38,6 @@
     "portraitTitle": "Portrait photography of Dominic Walch, the digital strategy consultant you can count on",
     "title": "Über mich",
     "content": "about.md"
-  }
+  },
+  "impressum": "impressum.md"
 }

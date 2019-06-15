@@ -1,32 +1,40 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Title from 'components/title';
-import { Container, Slides, Slide, Emojis, Emoji } from './textslider.css';
+import {
+  Container,
+  Slides,
+  Slide,
+  SlideTitle,
+  SlideContent,
+  Emojis,
+  Emoji,
+} from './textslider.css';
 
 const TextSlider = ({ slides = [], emojis = [] }) => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
     <Container>
-      <Slides>
-        {slides.map(({ id, title, text }, idx) => (
-          <Slide key={id} className={idx === activeSlide ? 'active' : ''}>
-            <Title as="h3">{title}</Title>
-            <p dangerouslySetInnerHTML={{ __html: text }} />
-          </Slide>
-        ))}
-      </Slides>
       <Emojis>
         {emojis.map((emoji, idx) => (
           <Emoji
             className={idx === activeSlide ? 'active' : ''}
             key={`${emoji}-${idx}`}
             onClick={() => setActiveSlide(idx)}
+            idx={idx}
           >
             {emoji}
           </Emoji>
         ))}
       </Emojis>
+      <Slides>
+        {slides.map(({ id, title, text }, idx) => (
+          <Slide key={id} className={idx === activeSlide ? 'active' : ''}>
+            <SlideTitle as="h3">{title}</SlideTitle>
+            <SlideContent dangerouslySetInnerHTML={{ __html: text }} />
+          </Slide>
+        ))}
+      </Slides>
     </Container>
   );
 };

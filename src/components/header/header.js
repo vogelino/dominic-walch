@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Subtitle, LogoSvg } from './header.css';
+import { accent } from 'constants/theme';
+import { Link } from 'gatsby';
 
 const Logo = () => (
   <LogoSvg
@@ -10,8 +12,8 @@ const Logo = () => (
     viewBox="0 0 172 84"
   >
     <g fill="none" fillRule="evenodd" transform="translate(0 .8)">
-      <rect width="173" height="10" y="27.2" fill="#F2E394" />
-      <rect width="134" height="10" y="73.2" fill="#F2E394" />
+      <rect width="173" height="10" y="27.2" fill={accent} />
+      <rect width="134" height="10" y="73.2" fill={accent} />
       <path
         fill="#010440"
         fillRule="nonzero"
@@ -23,8 +25,14 @@ const Logo = () => (
 
 const Header = ({ subtitle }) => (
   <Container>
-    <Logo />
-    <Subtitle as="h2">{subtitle}</Subtitle>
+    <Link to="/">
+      <Logo />
+    </Link>
+    <Subtitle as="h2">
+      {subtitle.split(' ').map(word => (
+        <span key={word}>{word}</span>
+      ))}
+    </Subtitle>
   </Container>
 );
 
