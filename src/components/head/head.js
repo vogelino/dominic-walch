@@ -150,7 +150,7 @@ const Head = ({
       type="image/png"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300|IBM+Plex+Sans:700"
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,500&display=swap"
       rel="stylesheet"
     />
 

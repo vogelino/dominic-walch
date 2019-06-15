@@ -2,20 +2,21 @@
   "title": "Dominic Walch",
   "subtitle": "Digital Strategy Consulting",
   "intro": {
-    "title": "Beratungsleistungen",
-    "content": "intro.md"
+    "catchphrase": "Sie haben ein Ziel, das Sie erreichen wollen, wissen aber nicht, wo Sie anfangen sollen?",
+    "logicalSequence": "Lassen Sie sich von mir beraten.",
+    "buttonText": "Better ask Walch!"
   },
   "sections": [
     {
-      "title": "Beratung zur Geschäftsentwicklung",
+      "title": "Geschäftsentwicklung",
       "content": "section1.md"
     },
     {
-      "title": "Beratung im Bereich Unternehmensfinanzierung",
+      "title": "Unternehmensfinanzierung",
       "content": "section2.md"
     },
     {
-      "title": "Beratung zur Marketingstrategie",
+      "title": "Marketingstrategie",
       "content": "section3.md"
     }
   ]

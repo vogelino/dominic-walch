@@ -1,18 +1,19 @@
 import styled from 'styled-components';
+import Title from 'components/title';
 
 export const Container = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem;
+  margin-bottom: 8vmin;
+`;
 
-  a {
-    color: #757575;
-    transition: color 0.2s ease;
-    text-decoration: none;
+export const LogoSvg = styled.svg`
+  margin-right: 10vmin;
+  float: left;
+`;
 
-    &:hover {
-      color: inherit;
-    }
-  }
+export const Subtitle = styled(Title)`
+  display: inline-block;
+  width: 100px;
+  font-size: 1rem;
+  line-height: 1.45rem;
+  padding-top: 16px;
 `;

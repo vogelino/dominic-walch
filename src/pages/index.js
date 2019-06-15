@@ -1,29 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Layout from 'components/layout';
-import Box from 'components/box';
 import Title from 'components/title';
+import Header from 'components/Header';
 import { graphql } from 'gatsby';
 
-const Index = ({ data }) => (
+const Index = ({
+  data: {
+    homeJson: { subtitle, intro, sections },
+  },
+}) => (
   <Layout>
-    <Box>
-      <Title as="h2">{data.homeJson.intro.title}</Title>
-      <p
-        dangerouslySetInnerHTML={{
-          __html: data.homeJson.intro.content.childMarkdownRemark.html,
-        }}
-      />
-    </Box>
-    {data.homeJson.sections.map(({ title, content }) => (
-      <Box key={title}>
+    <Header subtitle={subtitle} />
+    <div>
+      <Title as="h2">{intro.catchphrase}</Title>
+      <p>{intro.logicalSequence}</p>
+      <button>{intro.buttonText}</button>
+    </div>
+    {sections.map(({ title, content }) => (
+      <div key={title}>
         <Title as="h3">{title}</Title>
         <p
           dangerouslySetInnerHTML={{
             __html: content.childMarkdownRemark.html,
           }}
         />
-      </Box>
+      </div>
     ))}
   </Layout>
 );
@@ -40,13 +42,9 @@ export const query = graphql`
       title
       subtitle
       intro {
-        title
-        content {
-          childMarkdownRemark {
-            html
-            rawMarkdownBody
-          }
-        }
+        catchphrase
+        logicalSequence
+        buttonText
       }
       sections {
         title

@@ -29,13 +29,13 @@ export default createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
-,.
+
   html {
     font-size: 16px;
   }
 
   body {
-    font-family: "IBM Plex Sans", -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "IBM Plex Serif", -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1.8rem;
     font-size: 1.4rem;
     color: #000;
@@ -47,15 +47,8 @@ export default createGlobalStyle`
     -webkit-font-feature-settings: "pnum";
     font-feature-settings: "pnum";
     font-variant-numeric: proportional-nums;
-  }
-
-  h1, h2, h3 {
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  h2, h3 {
-    font-weight: 400;
+    padding: 8vmin;
+    font-weight: 300;
   }
 
   ol, ul {
