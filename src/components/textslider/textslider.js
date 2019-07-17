@@ -1,17 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import {
   Container,
   Slides,
   Slide,
   SlideTitle,
-  SlideContent,
   Emojis,
   Emoji,
 } from './textslider.css';
 
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
+}
+
 const TextSlider = ({ slides = [], emojis = [] }) => {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isRunning, setIsRunning] = useState(true);
+
+  useInterval(
+    () => {
+      const nextSlide =
+        activeSlide + 1 > slides.length - 1 ? 0 : activeSlide + 1;
+      setActiveSlide(nextSlide);
+    },
+    isRunning ? 3000 : null
+  );
+
+  const onEmojiClick = idx => {
+    setIsRunning(false);
+    setActiveSlide(idx);
+  };
 
   return (
     <Container>
@@ -20,7 +52,7 @@ const TextSlider = ({ slides = [], emojis = [] }) => {
           <Emoji
             className={idx === activeSlide ? 'active' : ''}
             key={`${emoji}-${idx}`}
-            onClick={() => setActiveSlide(idx)}
+            onClick={() => onEmojiClick(idx)}
             idx={idx}
           >
             {emoji}
@@ -28,10 +60,32 @@ const TextSlider = ({ slides = [], emojis = [] }) => {
         ))}
       </Emojis>
       <Slides>
-        {slides.map(({ id, title, text }, idx) => (
-          <Slide key={id} className={idx === activeSlide ? 'active' : ''}>
+        {slides.map(({ id, title, textLines }, idx) => (
+          <Slide
+            key={id}
+            className={
+              idx === activeSlide || (!activeSlide && idx === 0) ? 'active' : ''
+            }
+          >
             <SlideTitle as="h3">{title}</SlideTitle>
-            <SlideContent dangerouslySetInnerHTML={{ __html: text }} />
+            <p>
+              {textLines.map(({ id, text }) => {
+                if (id === 'email') {
+                  return (
+                    <a key={id} href={`mailto:${text}`}>
+                      {text}
+                    </a>
+                  );
+                }
+                if (!text.trim())
+                  return (
+                    <Fragment key={id}>
+                      <br />
+                    </Fragment>
+                  );
+                return <div key={id}>{text}</div>;
+              })}
+            </p>
           </Slide>
         ))}
       </Slides>
@@ -44,7 +98,7 @@ TextSlider.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
+      textLines: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
     })
   ),
   emojis: PropTypes.arrayOf(PropTypes.string),

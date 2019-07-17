@@ -10,34 +10,147 @@
     {
       "emoji": "👾",
       "title": "How we roll",
-      "content": "section1.md"
+      "content": [
+        {
+          "id": "passionForData",
+          "text": "Passion for data"
+        },
+        {
+          "id": "fastAndEfficient",
+          "text": "Fast and efficient"
+        },
+        {
+          "id": "creative",
+          "text": "Creative"
+        },
+        {
+          "id": "protectingCoreValues",
+          "text": "Protecting core values "
+        },
+        {
+          "id": "goingNewWays",
+          "text": "Going new ways"
+        }
+      ]
     },
     {
       "emoji": "🤩",
       "title": "What to expect",
-      "content": "section2.md"
+      "content": [
+        {
+          "id": "getYouComfyOutsideYourComfortZone",
+          "text": "Get you comfy outside your comfort zone"
+        },
+        {
+          "id": "breakUpYourRoutineAndPamperingYou",
+          "text": "Break up your routine and pampering you"
+        },
+        {
+          "id": "strengthenYourRoots",
+          "text": "Strengthen your roots"
+        },
+        {
+          "id": "nurtureYourBusiness",
+          "text": "Nurture your business"
+        },
+        {
+          "id": "teasingAndPleasing",
+          "text": "Teasing and pleasing"
+        }
+      ]
     },
     {
       "emoji": "❤️",
       "title": "What we love",
-      "content": "section3.md"
+      "content": [
+        {
+          "id": "workingWithAwesomePeople",
+          "text": "Working with awesome people"
+        },
+        {
+          "id": "havingFun",
+          "text": "Having fun"
+        },
+        {
+          "id": "beingChallenged",
+          "text": "Being challenged "
+        },
+        {
+          "id": "findingSolutions",
+          "text": "Finding solutions"
+        },
+        {
+          "id": "cuttingEdgeTechnology",
+          "text": "Cutting-edge technology"
+        },
+        {
+          "id": "pushingBoundaries",
+          "text": "Pushing boundaries"
+        },
+        {
+          "id": "beingCreative",
+          "text": "Being creative"
+        }
+      ]
     },
     {
       "emoji": "🧞‍",
       "title": "Who we are",
-      "content": "section4.md"
+      "content": [
+        {
+          "id": "dominicWalch",
+          "text": "Dominic Walch, digital strategy consultant and data creative with a diploma for information management."
+        },
+        {
+          "id": "hesGotAnAward",
+          "text": "He’s got an award-winning, proven industry track record and an extensive partner network."
+        },
+        {
+          "id": "dominicWorks",
+          "text": "Dominic works closely with an international team of UX, technology, data analytics and communication experts."
+        }
+      ]
     },
     {
       "emoji": "💌",
       "title": "Contact",
-      "content": "section5.md"
+      "content": [
+        {
+          "id": "dominicWalch",
+          "text": "Dominic Walch"
+        },
+        {
+          "id": "bornholmerStr92",
+          "text": "Bornholmer Str. 92"
+        },
+        {
+          "id": "10439Berlin",
+          "text": "10439 Berlin"
+        },
+        {
+          "id": "germany",
+          "text": "Germany"
+        },
+        {
+          "id": "empty",
+          "text": ""
+        },
+        {
+          "id": "email",
+          "text": "hello@betteraskwalch.com"
+        },
+        {
+          "id": "phoneNumber",
+          "text": "+49 152 23613813"
+        }
+      ]
     }
   ],
   "about": {
     "portrait": "../images/portrait-dominic-walch-digital-strategy-consulting.png",
     "portraitTitle": "Portrait photography of Dominic Walch, the digital strategy consultant you can count on",
     "title": "Über mich",
-    "content": "about.md"
+    "content": "./about.md"
   },
-  "impressum": "impressum.md"
+  "impressum": "./impressum.md"
 }

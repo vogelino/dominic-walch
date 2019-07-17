@@ -51,7 +51,7 @@ const Index = ({
           slides={sections.map(({ title, content }) => ({
             id: title,
             title,
-            text: content.childMarkdownRemark.html,
+            textLines: content,
           }))}
           emojis={sections.map(({ emoji }) => emoji)}
         />
@@ -84,10 +84,8 @@ export const query = graphql`
         title
         emoji
         content {
-          childMarkdownRemark {
-            html
-            rawMarkdownBody
-          }
+          id
+          text
         }
       }
       about {

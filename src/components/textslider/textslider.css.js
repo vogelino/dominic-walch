@@ -7,7 +7,12 @@ export const Container = styled.nav`
   position: relative;
 `;
 
-export const Slides = styled.ul``;
+export const Slides = styled.ul`
+  ${fadeInAnimation}
+  animation-delay: 300ms;
+`;
+
+export const SlideTitle = styled(Title)``;
 
 export const Slide = styled.li`
   display: inline-block;
@@ -24,16 +29,6 @@ export const Slide = styled.li`
   &.active {
     opacity: 1;
   }
-`;
-
-export const SlideTitle = styled(Title)`
-  ${fadeInAnimation}
-  animation-delay: 300ms;
-`;
-
-export const SlideContent = styled.p`
-  ${fadeInAnimation}
-  animation-delay: 350ms;
 `;
 
 export const Emojis = styled.ul`

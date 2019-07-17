@@ -1,6 +1,5 @@
 - Get you comfy outside your comfort zone 
 - Break up your routine and pampering you
-- Protect your core values 
 - Strengthen your roots
 - Nurture your business
 - Teasing and pleasing
