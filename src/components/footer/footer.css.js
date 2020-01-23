@@ -7,6 +7,10 @@ export const Container = styled.section`
   text-align: left;
   font-size: 1rem;
   color: gray;
+  display: grid;
+  grid-template-columns: 2rem 2rem auto;
+  grid-gap: 1.5rem;
+  align-items: center;
 
   ${fadeInAnimation}
   animation-delay: 1000ms;
@@ -18,5 +22,31 @@ export const Container = styled.section`
     &:hover {
       color: ${black};
     }
+  }
+`;
+
+export const TelegramLogo = styled.a`
+  display: inline-block;
+
+  & > svg path {
+    fill: grey;
+    transition: fill 200ms ease-in-out;
+  }
+
+  &:hover > svg path {
+    fill: #27a7e5;
+  }
+`;
+
+export const LinkedInLogo = styled.a`
+  display: inline-block;
+
+  & > svg path {
+    fill: grey;
+    transition: fill 200ms ease-in-out;
+  }
+
+  &:hover > svg path {
+    fill: #0090c1;
   }
 `;
